@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <title>Restaurantes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Restaurantes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Restaurantes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mezcla</a></li>
+                            <li><a class="dropdown-item" href="#">Tika Dogs Gourmet
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">Ammazza Gin Garden
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">Malanga del Trópico</a></li>
+                            <li><a class="dropdown-item" href="#">Tal Cual</a></li>
+                            <li><a class="dropdown-item" href="#">Mamasita Medallo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Más Restaurantes..</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled"></a>
+                    </li>
+                </ul>
+                !--<form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Restaurantes"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>-->
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/mezcla.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mezcla</h5>
+                        <p class="card-text">Calle 11a#43d60 <br> Restaurante Bar, donde se mezclan variedad de sabores
+                            artesanales, frescos y culturales. Un lugar para compartir momentos inolvidables</p>
+                        <a href="#" class="btn btn-primary" onclick="Reserva()">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/tika.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tika Dogs Gourmet</h5>
+                        <p class="card-text">Carrera 34 # 7-29 <br> Tika Dogs Gourmet, perros calientes diferentes y
+                            exquisitos realizados con los mejores ingredientes </p>
+                        <a href="#" class="btn btn-primary" onclick="Reserva()">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/garden.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ammazza Gin Garden</h5>
+                        <p class="card-text">Carrera 34, 7-40<br> Queremos ser para ustedes una experiencia magnifica
+                            desde lo exquisito de nuestros platos al paladar, para así pasar por cada uno de los otros
+                            sentidos…La visión con el ambiente que les ofrecemos</p>
+                        <a href="#" class="btn btn-primary" onclick="Reserva()">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/malanga.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Malanga del Trópico</h5>
+                        <p class="card-text"> Calle 38 79 46 <br> Somos quien convoca alrededor de un buen plato de
+                            comida y hacemos de cada momento un sabor especial. El arrebato de tener un lugar que saca a
+                            los comensales del asfalto de la ciudad</p>
+                        <a href="#" class="btn btn-primary" onclick="Reserva()">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/tal cual.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tal Cual</h5>
+                        <p class="card-text"> Calle 12, 43D-12 <br> Un espacio para disfrutar de deliciosos platos que
+                            son presentados al comensal como deliciosas obras pictóricas además de ser una tienda de
+                            arte con espacio de galería para exposiciones</p>
+                        <a href="#" class="btn btn-primary" onclick="Reserva()">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./imagenes/mamasita.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mamasita Medallo</h5>
+                        <p class="card-text">Carrera 43d 10 77 <br> Nuestra inspiración es la sabiduría criolla.Cócteles
+                            inspirados en el trópico y la mejor Comida Local,Hechos cuidadosamente a mano con los
+                            mejores ingredientes y recetas de Medallo. </p>
+                        <a href="#" class="btn btn-primary" onclick="Reserva()">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </ul>
+</body>
+<script>
+    function Reserva(){
+            alert("Reserva hecha con exito")
+        }
+  </script>
+</html>
