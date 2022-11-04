@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Crear Nuevo Restaurante</h1>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" >Nombre Restaurante</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">URL Imagen</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Descripción</label>
+            <textarea name="Descripción" id="tarea" cols="30" rows="2"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary"  onclick="mensaje()"> 
+            <a href="index.html">Guardar </a>  
+        </button>
+        
+      </form>
+  </body>
+  <script>
+        function mensaje(){
+        alert("Restaurante agregado con exito")
+    }
+  </script>
+  
+</html>
